@@ -14,6 +14,8 @@ square(5)
 
 ***Hint: you do not need to name the function, just define it and pass in the argument.***
 
+---
+
 *2. Here is the same function, but anonymous and written in arrow notation.  How would this be converted into an IIFE?*
 
 ```
@@ -21,6 +23,7 @@ var square = (num) => (num*num)
 
 square(5)
 ```
+---
 
 Immediately-invoked functions can be used in place of functions whenever you need the function to fire immediately after it's created.  They can keep your code a bit cleaner and more succinct, and can handle recursive functions and closures just fine.
 
@@ -39,5 +42,7 @@ fibonacciSeq()
 fibonacciSeq()
 fibonacciSeq()
 ```
+
+---
 
 *4. Final question - Write an IIFE that takes in two names, flips a 'coin' three times, and immediately returns the name that won the most games, along with the number of times that player won.*
