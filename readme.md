@@ -41,12 +41,3 @@ fibonacciSeq()
 ```
 
 Final question - Write an IIFE that takes in two names, flips a 'coin' three times, and immediately returns the name that won the most games, along with the number of times that player won.
-
-((name1, name2) => {
-    let players = {[name1]:0, [name2]:0}
-    for(let i = 0; i < 3; i++) {
-      (Math.floor(Math.random() * 2) == 0) ? players[name1]++ : players[name2]++
-    }
-    let result = players[name1] > players[name2] ? name1 +" "+players[name1] : name2 +" "+players[name2]
-    return result
-})("Daniel","Terrance")
