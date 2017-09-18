@@ -9,7 +9,7 @@ As a table, discuss how you could write and call the following function as a one
 ```
 function square(num) { return num*num}
 
-square(num)
+square(5)
 ```
 
 ***Hint: you do not need to name the function, just define it and pass in the argument.***
