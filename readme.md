@@ -4,30 +4,9 @@ From Wikipedia: "An immediately-invoked function expression (or IIFE, pronounced
 
 An IIFE can be useful for firing off a specific function one time in a specific place in your code, and can act as a shorthand version of defining and then calling a function separately.  IIFEs are similar to anonymous functions in the sense that they do not need to be declared with a name.
 
-*1. As a table, discuss how you could write and call the following function as a one line IIFE:*
-
-```
-function square(num) { return num*num}
-
-square(5)
-```
-
-***Hint: you do not need to name the function, just define it and pass in the argument.***
-
----
-
-*2. Here is the same function, but anonymous and written in arrow notation.  How would this be converted into an IIFE?*
-
-```
-var square = (num) => (num*num)
-
-square(5)
-```
----
-
 Immediately-invoked functions can be used in place of functions whenever you need the function to fire immediately after it's created.  They can keep your code a bit cleaner and more succinct, and can handle recursive functions and closures just fine.
 
-*3. Paste the following code into your console and call 'fibonacciSeq()' a few times.  Discuss with your table what is happening in the following closure (don't sweat if you haven't covered closures just yet):*
+*1. Paste the following code into your console and call 'fibonacciSeq()' a few times.  Discuss with your table what is happening in the following closure:*
 
 ```
 var fibonacciSeq = (() => {
@@ -41,6 +20,28 @@ var fibonacciSeq = (() => {
 fibonacciSeq()
 fibonacciSeq()
 fibonacciSeq()
+```
+
+---
+
+*2. As a table, discuss how you could write and call the below function as a one line IIFE _without assigning the function to a variable_.  :*
+
+```
+function square(num) { return num*num}
+
+square(5)
+```
+
+***Hint: you do not need to name the function.  You just need to declare it and pass in an argument immediately.***
+
+---
+
+*3. Here is the same function, but anonymous and written in arrow notation.  How would this be converted into an IIFE?  Again, do not assign it to a variable, it isn't necessary for immediately invoked expressions!*
+
+```
+var square = (num) => (num*num)
+
+square(5)
 ```
 
 ---
