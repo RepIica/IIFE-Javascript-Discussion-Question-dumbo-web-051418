@@ -4,7 +4,7 @@ From Wikipedia: "An immediately-invoked function expression (or IIFE, pronounced
 
 An IIFE can be useful for firing off a specific function one time in a specific place in your code, and can act as a shorthand version of defining and then calling a function separately.  IIFEs are similar to anonymous functions in the sense that they do not need to be declared with a name.
 
-Immediately-invoked functions can be used in place of functions whenever you need the function to fire immediately after it's created.  They can keep your code a bit cleaner and more succinct, and can handle recursive functions and closures just fine.
+Immediately-invoked functions can be used in place of regular functions whenever you need the function to fire immediately after it's created.  They can keep your code a bit cleaner and more succinct, and can handle recursive functions and closures just fine.
 
 *1. Paste the following code into your console and call 'fibonacciSeq()' a few times.  Discuss with your table what is happening in the following closure:*
 
